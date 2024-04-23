@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5px 8%;
+        margin: 40px 20px 20px 20px;
+
+
+}
+.collum{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+}
+.container .gallery .collum {
+    width: 100%;
+}
+
+.container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+
+} 
+
+.container .heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    padding-bottom: 10px;
+}
+.container .heading h3 span{
+    font-weight: 100;
+}
+
+body{
+    background-image: url(sky.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
